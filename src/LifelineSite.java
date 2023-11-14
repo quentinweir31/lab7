@@ -2,6 +2,7 @@ public class LifelineSite extends Site{
     private static int _units;
     private static float _rate;
     public LifelineSite(int units, float rate) {
+        super(units, rate);
         this._units = units;
         this._rate = rate;
     }
