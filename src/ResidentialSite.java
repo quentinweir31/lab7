@@ -6,12 +6,12 @@ public class ResidentialSite extends Site{
         this._rate = rate;
     }
     public double getBase() {
-        double base = _units * _rate;
-        return base;
+        double residentialBase = _units * _rate;
+        return residentialBase;
     }
     public double getTax() {
-        double base = getBase();
-        double tax = base * Site.TAX_RATE;
+        double residentialBase = getBase();
+        double tax = residentialBase * Site.TAX_RATE;
         return tax;
     }
 }
