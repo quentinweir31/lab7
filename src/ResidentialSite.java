@@ -11,7 +11,7 @@ public class ResidentialSite extends Site{
     }
     public double getTax() {
         double residentialBase = getBase();
-        double tax = residentialBase * Site.TAX_RATE;
-        return tax;
+        double residentialTax = residentialBase * Site.TAX_RATE;
+        return residentialTax;
     }
 }
