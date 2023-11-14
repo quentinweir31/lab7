@@ -6,12 +6,12 @@ public class LifelineSite extends Site{
         this._rate = rate;
     }
     public double getBase() {
-        double base = _units * _rate * 0.5;
-        return base;
+        double lifelineBase = _units * _rate * 0.5;
+        return lifelineBase;
     }
     public double getTax() {
-        double base = getBase();
-        double tax = base * Site.TAX_RATE * 0.2;
+        double lifelineBase = getBase();
+        double tax = lifelineBase * Site.TAX_RATE * 0.2;
         return tax;
     }
 }
