@@ -11,7 +11,7 @@ public class LifelineSite extends Site{
     }
     public double getTax() {
         double lifelineBase = getBase();
-        double tax = lifelineBase * Site.TAX_RATE * 0.2;
-        return tax;
+        double lifelineTax = lifelineBase * Site.TAX_RATE * 0.2;
+        return lifelineTax;
     }
 }
